@@ -10,12 +10,12 @@ of town and to help supporters on the road find lodging.
 * Bower for front end asset management
 
 ## Contributing
-Please e-mail sam@samuelcole.name.
+Please e-mail info@ragtag.org or sign up at ragtag.org/join.
 We would love your help.
 
 ## Setting up development
 
-* Fork MarchBNB on github and clone: `git clone git@github.com:<your github username>/MarchBNB.git && cd MarchBNB`
+* Fork Localhost on github and clone: `git clone git@github.com:<your github username>/MarchBNB.git && cd MarchBNB`
 * `cp config/application.yml.example config/application.yml`
 * `git remote add upstream git@github.com:samuelcole/MarchBNB.git` so you can keep in sync with original project by running `git pull upstream master`.
 
