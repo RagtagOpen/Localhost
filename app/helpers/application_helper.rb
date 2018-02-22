@@ -20,18 +20,18 @@ module ApplicationHelper
   end
 
   def email_contact
-    "admin@peopleshousing.com"
+    "localhost@ragtag.org"
   end
 
   def privacy_policy_link
-    "https://github.com/samuelcole/MarchBNB/blob/master/doc/facebook-privacy-statement.txt"
+    "https://github.com/RagtagOpen/localhost/blob/master/app/views/pages/privacy_policy.html.erb"
   end
 
   def bug_report_link
-    "https://github.com/samuelcole/MarchBNB/issues"
+    "https://github.com/RagtagOpen/localhost/issues"
   end
 
   def github_link
-    "https://github.com/samuelcole/MarchBNB"
+    "https://github.com/RagtagOpen/localhost"
   end
 end
