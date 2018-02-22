@@ -45,5 +45,8 @@ module HillaryBNB
 
     # Bower assets
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+
+    # Use custom error pages
+    config.exceptions_app = self.routes
   end
 end
