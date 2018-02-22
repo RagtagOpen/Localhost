@@ -11,17 +11,6 @@ web:
     - herokuPostgresql
   volumes:
     - '.:/usr/src/app'
-test:
-  build: .
-  command: 'bash -c ''bin/rake db:migrate && bin/rake'''
-  environment:
-    PORT: 8080
-    DATABASE_URL: 'postgres://postgres:@herokuPostgresql:5432/postgres'
-    RAILS_ENV: test
-  links:
-    - herokuPostgresql
-  volumes:
-    - '.:/usr/src/app'
 herokuPostgresql:
   image: postgres
   volumes:
