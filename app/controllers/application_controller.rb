@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
 
   # Need to check if this is a static page in order to go around the auth checks
   def is_static_page?
-    self.class.to_s == "HighVoltage::PagesController"
+    self.class.to_s =~ /^(\w+::)?PagesController$/
   end
 
   def sign_in!(user)
