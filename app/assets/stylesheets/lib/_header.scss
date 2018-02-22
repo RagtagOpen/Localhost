@@ -16,14 +16,14 @@ header {
   }
 
   .banner {
-    height: 75px;
-    background-color: $background_color_red;
+    height: 100px;
+    background-color: $primary_color_3;
 
     .logo {
       background-image: image-url("logo.png");
       background-size: auto 110%;
       background-repeat: no-repeat;
-      height: 60px;
+      height: 85%;
     }
 
     a.home-link {
