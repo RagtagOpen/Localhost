@@ -5,12 +5,12 @@ FACEBOOK_SECRET: 'abcde'
 GOOGLE_CLIENT_ID: "TBD"
 GOOGLE_CLIENT_SECRET: "TBD"
 BING_GEOCODE_ID: "TBD"
-SITEURL: 'www.peopleshousing.com'
-MAILER_URL: 'www.peopleshousing.com'
-BASE_DOMAIN: 'peopleshousing.com'
+SITEURL: 'localhost.ragtag.org'
+MAILER_URL: 'localhost.ragtag.org'
+BASE_DOMAIN: 'localhost.ragtag.org'
 FB_CAPTION: 'Host a supporter!'
-CAUSE_NAME: 'People's Housing'
-DEFAULT_SENDER_ADDRESS: "admin@peopleshousing.com"
+CAUSE_NAME: 'Localhost'
+DEFAULT_SENDER_ADDRESS: "localhost@ragtag.org"
 
 development:
   MAILGUN_API_KEY:       "TBD"
