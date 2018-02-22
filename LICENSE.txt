@@ -1,4 +1,4 @@
-People's Housing: A home-sharing app, adapted from BernieBNB by Coders For Sanders and HillaryBNB by DevProgress
+Localhost: A home-sharing app, adapted from BernieBNB by Coders For Sanders and HillaryBNB by DevProgress and by Ragtag volunteers
     Copyright (C) 2016  Coders For Sanders and DevProgress
     
     This program is free software: you can redistribute it and/or modify
