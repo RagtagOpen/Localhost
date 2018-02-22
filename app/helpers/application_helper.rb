@@ -1,10 +1,10 @@
 module ApplicationHelper
   def site_name
-    "Swing Left Localhost"
+    ENV['CAUSE_NAME'] || "Swing Left Localhost"
   end
 
   def cause_name
-    "Swing Left Localhost"
+    ENV['CAUSE_NAME'] || "Swing Left Localhost"
   end
 
   def site_hostname(request)
