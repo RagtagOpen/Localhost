@@ -9,9 +9,7 @@ Rails.application.routes.draw do
   match "/auth/failure" => "home#sign_in", via: [:get, :post]
 
   match "/contacts/:visit_id/:hosting_id" => "contacts#create", via: [:post]
-
-  get 'privacy_policy', to: 'policies#facebook'
-
+  
   resource :contacts, only: [:create]
 
   resources :visits, only: [:create, :destroy, :update, :show, :edit]
