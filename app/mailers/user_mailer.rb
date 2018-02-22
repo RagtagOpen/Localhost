@@ -8,7 +8,7 @@ class UserMailer < ApplicationMailer
     deliver_message(
       from: default_sender_address,
       to: user.email,
-      subject: "People's Housing - Confirm Your Email",
+      subject: "#{ENV['CAUSE_NAME']} - Confirm Your Email",
       html: template("user_mailer/registration_confirmation.html.erb")
     )
   end
@@ -19,7 +19,7 @@ class UserMailer < ApplicationMailer
     deliver_message(
       from: default_sender_address,
       to: @user.email,
-      subject: "People's Housing - Thanks for signing up!",
+      subject: "#{ENV['CAUSE_NAME']} - Thanks for signing up!",
       html: template("user_mailer/welcome_email.html.erb")
     )
   end
