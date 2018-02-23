@@ -23,7 +23,9 @@
       .form-group
         = f.check_box :accepted_tos, id: 'accepted_tos', checked: false
         = f.label :accepted_tos, "I accept the"
-        = link_to "Terms of Service", page_path('terms_of_service'), target: '_blank', class: 'tos-link'
+        = link_to "Terms of Use", page_path('terms_of_service'), target: '_blank', class: 'tos-link'
+        and the
+        = link_to "Swing Left Organizer Liability Statement", 'https://swingleft.org/p/liability', target: '_blank', class: 'tos-link'
 
       .col-xs-12.col-sm-6
         = f.submit button_text, id: 'submit', class: 'btn btn-success btn-block btn-lg', disabled: 'disabled'\
