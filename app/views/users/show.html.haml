@@ -4,7 +4,7 @@
   %section.user-travels
     %header
       = link_to 'Find A Host', new_user_visit_url(user), class: 'btn btn-primaryblue btn-block btn-lg'
-      %span Coming to the march?
+      %span Coming to canvass?
     - unless user.visits.empty?
       %ul
         - user.visits.each do |visit|
@@ -33,8 +33,8 @@
           share
         = link_to 'https://twitter.com/intent/tweet' + |
                   '?hashtags=peopleshousing' + |
-                  '&text=Get involved by offering marchers and supporters a place to stay!' + |
-                  '&url=http://peopleshousing.com', |
+                  '&text=Get involved by offering activists and volunteers a place to stay!' + |
+                  '&url=http://localhost.ragtag.org', |
                   class: 'btn btn-share twitter-share' do
           %i.fa.fa-twitter{ :type => 'button', :aria_hidden => 'true' }
           tweet
