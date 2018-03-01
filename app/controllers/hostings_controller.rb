@@ -58,7 +58,7 @@ class HostingsController < ApplicationController
   end
 
   def ensure_current_user_is_host_or_admin
-    unless @hosting.host_id == current_user.id || current_user && current_user.admin
+    unless current_user && (@hosting.host_id == current_user.id || current_user.admin)
       redirect_to user_url(current_user)
     end
   end
