@@ -1,0 +1,24 @@
+%h1 Hostings
+
+= link_to "Download CSV", admin_path(format: :csv)
+
+%br
+%br
+
+%table.padded
+  %tr
+    %th Created at
+    %th Start date
+    %th Host
+    %th Email address
+    %th City
+    %th Link
+  - @hostings.each do |h|
+    %tr
+      %td= h.created_at.to_formatted_s(:short)
+      %td= h.start_date
+      %td= h.host.first_name
+      %td
+        = mail_to h.host.email
+      %td= h.city
+      %td= link_to "edit", edit_hosting_path(h)

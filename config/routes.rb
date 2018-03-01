@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   match "/auth/failure" => "home#sign_in", via: [:get, :post]
 
   match "/contacts/:visit_id/:hosting_id" => "contacts#create", via: [:post]
-  
+
   resource :contacts, only: [:create]
 
   resources :visits, only: [:create, :destroy, :update, :show, :edit]
@@ -26,6 +26,8 @@ Rails.application.routes.draw do
     resources :visits, only: [:new]
     resources :hostings, only: [:new]
   end
+
+  get "/admin" => "admin#hostings"
 
   get "/pages/:page" => "pages#show"
   get "five_hundred" => "home#five_hundred"
