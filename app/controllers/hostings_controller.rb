@@ -1,6 +1,6 @@
 class HostingsController < ApplicationController
   before_action :find_hosting, only: [:edit, :update, :destroy]
-  before_action :ensure_current_user_is_host, only: [:edit, :update, :destroy]
+  before_action :ensure_current_user_is_host_or_admin, only: [:edit, :update, :destroy]
 
   def new
     @hosting ||= Hosting.new(host_id: params[:user_id], start_date: '2017-04-28', end_date: '2017-04-29')
@@ -57,7 +57,9 @@ class HostingsController < ApplicationController
     end
   end
 
-  def ensure_current_user_is_host
-    redirect_to user_url(current_user) unless @hosting.host_id == current_user.id
+  def ensure_current_user_is_host_or_admin
+    unless @hosting.host_id == current_user.id || current_user && current_user.admin
+      redirect_to user_url(current_user)
+    end
   end
 end
